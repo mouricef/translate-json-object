@@ -13,6 +13,7 @@
     "docs": "jsdoc2md lib/translate-json-object.js > docs/api.md"
   },
   "dependencies": {
+    "deepl-node": "^1.10.2",
     "google-translate": "2.2.0",
     "lodash": "4.17.15",
     "promise": "8.0.3",

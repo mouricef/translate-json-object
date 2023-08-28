@@ -1,18 +1,19 @@
-declare module 'translate-json-object' {
-    interface Options {
-        googleApiKey?: string
-        yandexApiKey?: string
-    }
+declare module "translate-json-object" {
+  interface Options {
+    googleApiKey?: string;
+    yandexApiKey?: string;
+    deeplApiKey?: string;
+  }
 
-    function init(options: Options): boolean
-    function translate(srcObj: object, language: string): Promise<object>
+  function init(options: Options): boolean;
+  function translate(srcObj: object, language: string): Promise<object>;
 
-    interface Result {
-        init: typeof init
-        translate: typeof translate
-    }
+  interface Result {
+    init: typeof init;
+    translate: typeof translate;
+  }
 
-    function TranslateJSONObject(): Result
+  function TranslateJSONObject(): Result;
 
-    export default TranslateJSONObject
+  export default TranslateJSONObject;
 }
