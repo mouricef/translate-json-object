@@ -44,11 +44,19 @@
         "labelDelete": "Delete",
         "labelUndo": "Undo",
         "labelRetry": "Retry",
-        "paywalledFeedIntroBtnText": "View {{INTRO_FEED}} feed",
+        "paywalledFeedIntroBtnText": "View {{introFeed}} feed",
         "labelWelcome": "Welcome",
         "labelMore": "more",
         "ampersandSign": "&",
-        "commaSign": ","
+        "commaSign": ",",
+        "labelDOI": "DOI:",
+        "apiError": "Something went wrong. Please try again later",
+        "TERMS": "Terms of use",
+        "PRIVACY": "Privacy Policy",
+        "COOKIE": "Cookie Policy",
+        "labelAnd": "and",
+        "labelThatsAllForNow": "That’s all for now",
+        "labelGoToTop": "Go to top"
     },
     "drawerMenu": {
         "feedSettingMenuTitle": "Feed settings",
@@ -265,11 +273,11 @@
         "publisherDropDownTipMessage": "Change the Publisher or go back to your Feed from here!",
         "articleHideSuccessMessage": "Paper hidden",
         "showMyFeedButtonLabel": "Show My Feed",
-        "labelThatsAllForNow": "That’s all for now",
-        "labelGoToTop": "Go to top",
         "labelShow": "Show",
         "labelFeed": "Feed",
         "followedMsg": "This publisher can be accessed under the followed section in publisher channels",
+        "labelPaper_one": "paper",
+        "labelPaper_other": "papers",
         "channelFollowed": "Followed",
         "channelRecommended": "Recommended"
     },
@@ -513,7 +521,6 @@
         "setupPassword": "Set up Password*",
         "agreeTitle": "By logging in or registering, you agree to our",
         "termsConditionLink": "Terms & Conditions",
-        "privacyPolicyLink": "Privacy Policy ",
         "saveYourPreferences": "Save preferences to view your feed ",
         "saveYourPreferencesDesc": "Create a free account to save your preferences and view your feed ",
         "goBack": "Go Back ",
@@ -562,7 +569,6 @@
         "titleEmail": "Almost there",
         "QUES": "Didn’t receive the code? ",
         "NOTE": "Note: Please check your spam or junk folder in case you haven’t received the mail",
-        "labelAnd": "and",
         "wantToStayUpdated": "I want to stay updated on my research topics ",
         "searchSpecificPaper": "I want to search for specific article",
         "findPapersForLitReview": "I want to find article for doing a literature review ",
@@ -596,7 +602,9 @@
         "defaultHeader": "Register for FREE ",
         "registerationBenefitOne": "Get notified about any new papers published ",
         "registerationBenefitTwo": "Access to paid papers for FREE via your institute ",
-        "registerationBenefitThree": "Unlimited access to all FREE features "
+        "registerationBenefitThree": "Unlimited access to all FREE features ",
+        "USEFUL_UPDATE": "I want to receive useful updates",
+        "labelIAgreeToThe": "I agree to the"
     },
     "referenceManager": {
         "extractFromRMHeaderTitle": "Extract topics",
@@ -626,10 +634,11 @@
         "labelLibraryExport": "Library Export",
         "labelExportStatus": "Export Status",
         "noDataAvailableMessage": "No data available. Please try again after sometime.",
-        "labelPaper_one": "paper",
-        "labelPaper_other": "papers",
         "labelJob_one": "job",
-        "labelJob_other": "jobs"
+        "labelJob_other": "jobs",
+        "labelPaper_one": "paper",
+        "labelPapers_other": "papers",
+        "labelSignInTo": "Sign in to"
     },
     "search": {
         "titleNoResultSearch": "We didn’t find any research interests for",
@@ -705,7 +714,6 @@
         "lblPrivacyPolicy": "Privacy policy",
         "lblCookiePolicy": "Cookie policy",
         "lblManageCookies": "Manage cookies",
-        "lblTermsOfUse": "Terms of use",
         "confortFontType": "Comfort",
         "largeFontType": "Large",
         "heading": "The new password you create will be updated for all R products",
@@ -801,7 +809,6 @@
         "shareThisPaper": "Share this paper",
         "articleShareDefaultMessage": "Hi, I am sharing this interesting paper I found on the RDiscovery app. Click on the link below to download the app and view this paper.",
         "labelUnread": "Unread",
-        "labelExport": "Export",
         "labelMove": "Move",
         "labelAreYouSure": "Are you sure you want to delete ",
         "labelContaining": "containing",
@@ -915,12 +922,19 @@
         "labelHome": "HOME",
         "labelTopPaperrs": "TOP PAPERS",
         "labelSearch": "SEARCH",
-        "labelLibrary": "LIBRARY"
-    },
-    "tabBar": {
-        "search": "SEARCH",
-        "home": "HOME",
-        "library": "LIBRARY",
-        "top_papers": "TOP PAPERS"
+        "labelLibrary": "LIBRARY",
+        "journalListing": "Journals",
+        "yourInstitutes": "Your institutes ",
+        "addYourInstitute": "Add your institute ",
+        "labelPageTitle": "Page title",
+        "registerWithConsents": "Notification & Permission",
+        "search": "Search",
+        "searchResults": "Search Results",
+        "feedSettings": "Feed settings",
+        "searchResult": "Search Results",
+        "publisherChannelHeaderTitle": "Publisher Channels",
+        "searchFilterHeaderTitle": "Filters",
+        "libraryScreenHeaderTitle": "Library",
+        "searchWithPaperTitleScreenHeaderTitle": "Search With Paper Title"
     }
 }

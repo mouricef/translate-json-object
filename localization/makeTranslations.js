@@ -9,6 +9,16 @@ var path = require('path');
 
 const outputDirectory = 'translations';
 
+const writeToFile = (data, lang = 'out.txt') => {
+    //TODO mkdir translation folder  - if it does not exist, code fails
+    const stream = createWriteStream(pathRelative(lang));
+    stream.once('open', function (fd) {
+        stream.write(JSON.stringify(data));
+        stream.end();
+        console.log('lang', lang, ' written');
+    });
+};
+
 TJO.init({
     deeplApiKey: '867a63ed-1620-5d7b-6135-da90afd1138b',
 });
@@ -63,12 +73,12 @@ function convertToNestedKeys(obj, parentKey = "") {
 
         sleep(1000);
 
-        //Find: "(.*?)":
-        //Replace: $1:
-        let translationData = json_SOURCE_OF_TRUTH;
-        const translationKeys = convertToNestedKeys(translationData, "");
-        writeToFile(translationKeys, 'translation_keys');
-        sleep(1000);
+        // //Find: "(.*?)":
+        // //Replace: $1:
+        // let translationData = json_SOURCE_OF_TRUTH;
+        // const translationKeys = convertToNestedKeys(translationData, "");
+        // writeToFile(translationKeys, 'translation_keys');
+        // sleep(1000);
     } catch (error) {
         console.log('error ', error);
     }
@@ -86,16 +96,6 @@ function fileExists(lang) {
 function pathRelative(lang) {
     return path.join(__dirname, outputDirectory, lang + '.json');
 }
-
-const writeToFile = (data, lang = 'out.txt') => {
-    //TODO mkdir translation folder  - if it does not exist, code fails
-    const stream = createWriteStream(pathRelative(lang));
-    stream.once('open', function (fd) {
-        stream.write(JSON.stringify(data));
-        stream.end();
-        console.log('lang', lang, ' written');
-    });
-};
 
 function sleep(ms = 1000) {
     return new Promise(resolve => {
